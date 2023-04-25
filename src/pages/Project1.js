@@ -62,7 +62,7 @@ export default function TicTacToe() {
   }, [winnerName]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/startgame/you", {
+    fetch("https://profileapplication.herokuapp.com/api/startgame/you", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -108,7 +108,7 @@ export default function TicTacToe() {
       async function fetchData() {
         try {
           const response = await axios.post(
-            "http://localhost:8080/api/computer"
+            "https://profileapplication.herokuapp.com/api/computer"
           );
           setCompPlay(response.data);
           // findLastPlay(compPlay);
@@ -190,8 +190,8 @@ export default function TicTacToe() {
   };
 
   async function handleHumanPlay(play) {
-    let url = `http://localhost:8080/api/humanplayer/${play}`;
-    if (url != "http://localhost:8080/api/humanplayer/") {
+    let url = `https://profileapplication.herokuapp.com/api/humanplayer/${play}`;
+    if (url != "https://profileapplication.herokuapp.com/api/humanplayer/") {
       try {
         const response = await axios.post(url);
         setHumanPlay(response.data);
