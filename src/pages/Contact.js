@@ -7,7 +7,7 @@ function Contact() {
     <div className="contact">
       <div className="contactUs">
         <h2>Contact Me</h2>
-        <p>Phone: (+1) 404-466-9066</p>
+        <p>Phone: (+1) 403-466-9066</p>
         <p>Email: akinbodesola@gmail.com</p>
         <p>LinkedIn: https://www.linkedin.com/in/olusolaakinbode/</p>
       </div>
