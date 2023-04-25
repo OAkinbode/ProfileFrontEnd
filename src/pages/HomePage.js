@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Typography, Box, Avatar, Paper } from "@mui/material";
 import profileimage from "../assets/profileimage.jpeg";
 import aboutmeimage from "../assets/AboutMe.png";
-import techstackimage from "../assets/TechStack.webp";
+import techstackimage from "../assets/Techstack.jpeg";
 import projectsimage from "../assets/Projects.webp";
 import educationImage from "../assets/Education2.avif";
 
