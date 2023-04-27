@@ -25,6 +25,7 @@ export default function TicTacToe() {
   const [winner, setWinner] = useState(0);
   const [winnerName, setWinnerName] = useState("");
   const [showComponent, setShowComponent] = useState(false);
+  const [allowNextPlay, setAllowNextPlay] = useState(true);
 
   useEffect(() => {
     handleHumanPlay(play);
@@ -33,7 +34,7 @@ export default function TicTacToe() {
   useEffect(() => {
     setTimeout(function () {
       makeComputerPlay();
-    }, 500);
+    }, 50);
   }, [playPos]);
 
   useEffect(() => {
@@ -43,6 +44,7 @@ export default function TicTacToe() {
 
   useEffect(() => {
     handleComputerPlay(compPlayRow, compPlayCell);
+    setAllowNextPlay(true);
   }, [compPlayRow, compPlayCell]);
 
   useEffect(() => {
@@ -191,12 +193,16 @@ export default function TicTacToe() {
 
   async function handleHumanPlay(play) {
     let url = `https://profileapplication.herokuapp.com/api/humanplayer/${play}`;
-    if (url != "https://profileapplication.herokuapp.com/api/humanplayer/") {
+    if (
+      url != "https://profileapplication.herokuapp.com/api/humanplayer/" &&
+      allowNextPlay
+    ) {
       try {
         const response = await axios.post(url);
         setHumanPlay(response.data);
         setPlayPos(playPos + 2);
         checkWinner(humanPlay);
+        setAllowNextPlay(false);
       } catch (error) {
         console.error(error);
       }
