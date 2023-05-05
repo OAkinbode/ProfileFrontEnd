@@ -135,7 +135,7 @@ export default function AboutMe() {
             <li>
               <Typography variant="body1" textAlign={"left"}>
                 <b>Java Game:</b>
-                <Link to="/projects">
+                <Link to="/tictactoe">
                   {" "}
                   <i>
                     {" "}
