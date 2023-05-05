@@ -7,6 +7,7 @@ export default function RightPane() {
   const [clickedHome, setClickedHome] = useState(false);
   const [clickedProjects, setClickedProjects] = useState(false);
   const [clickedContact, setClickedContact] = useState(false);
+  const [showList, setShowList] = useState(false);
 
   function handleClickHome() {
     setClickedHome(true);
@@ -20,6 +21,11 @@ export default function RightPane() {
     setClickedContact(true);
   }
 
+  function handleClick() {
+    if (showList === false) setShowList(true);
+    else if (showList === true) setShowList(false);
+  }
+
   return (
     <div
       style={{
@@ -29,18 +35,19 @@ export default function RightPane() {
         paddingTop: 20,
       }}
     >
-      <div>
-        <h3>Menu</h3>
-      </div>
-
       <Container>
-        <ul>
+        <ol style={{ listStyle: "none" }}>
           <li>
             <Typography
               variant="body1"
               textAlign={"left"}
               onClick={handleClickHome}
-              style={{ color: clickedHome ? "blue" : "inherit" }}
+              style={{
+                color: clickedHome ? "blue" : "inherit",
+                fontSize: "1.1rem",
+                fontWeight: 400,
+                marginBottom: "0.5rem",
+              }}
             >
               <Link to="/">Home</Link>
             </Typography>
@@ -49,10 +56,25 @@ export default function RightPane() {
             <Typography
               variant="body1"
               textAlign={"left"}
-              onClick={handleClickProjects}
-              style={{ color: clickedProjects ? "blue" : "inherit" }}
+              style={{
+                color: clickedProjects ? "blue" : "inherit",
+                fontSize: "1.1rem",
+                fontWeight: 400,
+                marginBottom: "0.5rem",
+              }}
             >
-              <Link to="/projects"> My Projects </Link>
+              <Link onClick={handleClick}>Projects</Link>
+              {showList && (
+                <ul>
+                  <li>
+                    <Link to="/TicTacToe">Tic-Tac-Toe</Link>
+                  </li>
+                  <li>
+                    <Link to="/GrabAJoke">Grab-a-Joke</Link>
+                  </li>
+                </ul>
+              )}
+              {/* <Link to="/projects"> My Projects </Link> */}
             </Typography>
           </li>
           <li>
@@ -60,7 +82,12 @@ export default function RightPane() {
               variant="body1"
               textAlign={"left"}
               onClick={handleClickProjects}
-              style={{ color: clickedProjects ? "blue" : "inherit" }}
+              style={{
+                color: clickedProjects ? "blue" : "inherit",
+                fontSize: "1.1rem",
+                fontWeight: 400,
+                marginBottom: "0.5rem",
+              }}
             >
               <Link to="/MyResume">View my Resume</Link>
             </Typography>
@@ -70,12 +97,17 @@ export default function RightPane() {
               variant="body1"
               textAlign={"left"}
               onClick={handleClickContact}
-              style={{ color: clickedContact ? "blue" : "inherit" }}
+              style={{
+                color: clickedContact ? "blue" : "inherit",
+                fontSize: "1.1rem",
+                fontWeight: 400,
+                marginBottom: "0.5rem",
+              }}
             >
               <Link to="/contactus"> Contact Me </Link>
             </Typography>
           </li>
-        </ul>
+        </ol>
       </Container>
     </div>
   );

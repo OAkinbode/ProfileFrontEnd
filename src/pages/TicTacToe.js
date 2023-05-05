@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import * as React from "react";
-import TicTacToe from "./Project1";
 import Navbar from "../components/Navbar";
 import RightPane from "./RightPane";
+import Project1 from "./Project1";
 
 function Projects() {
   return (
@@ -10,7 +10,7 @@ function Projects() {
       <Navbar />
       <div style={{ display: "flex" }}>
         <RightPane />
-        <TicTacToe />
+        <Project1 />
       </div>
     </div>
   );

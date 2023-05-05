@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "../styles/TicTacToe.css";
 import "../styles/Nice-button.css";
 
-export default function TicTacToe() {
+export default function Project1() {
   const initialBoard = [
     [null, null, null],
     [null, null, null],
