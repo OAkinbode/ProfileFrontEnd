@@ -186,7 +186,7 @@ export default function AboutMe() {
                 style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
               >
                 <b>Other Projects:</b>
-                <Link to="https://github.com/OAkinbode">
+                <Link to="https://github.com/OAkinbode?tab=repositories">
                   {" "}
                   <i> Click here to go to my github</i>.{" "}
                 </Link>

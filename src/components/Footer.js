@@ -10,7 +10,9 @@ function Footer() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="https://github.com/OAkinbode">My Github Account</Link>
+          <Link to="https://github.com/OAkinbode?tab=repositories">
+            My Github Account
+          </Link>
         </li>
         <li>
           <Link to="https://www.linkedin.com/in/olusolaakinbode/">
