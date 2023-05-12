@@ -49,7 +49,15 @@ export default function RightPane() {
                 marginBottom: "0.5rem",
               }}
             >
-              <Link to="/">Home</Link>
+              <Link
+                to="/"
+                style={{
+                  textDecoration: "none",
+                  fontFamily: "Arial, sans-serif",
+                }}
+              >
+                Home
+              </Link>
             </Typography>
           </li>
           <li>
@@ -63,14 +71,38 @@ export default function RightPane() {
                 marginBottom: "0.5rem",
               }}
             >
-              <Link onClick={handleClick}>Projects</Link>
+              <Link
+                onClick={handleClick}
+                style={{
+                  textDecoration: "none",
+                  fontFamily: "Arial, sans-serif",
+                }}
+              >
+                Projects
+              </Link>
               {showList && (
                 <ul>
                   <li>
-                    <Link to="/TicTacToe">Tic-Tac-Toe</Link>
+                    <Link
+                      to="/TicTacToe"
+                      style={{
+                        textDecoration: "none",
+                        fontFamily: "Arial, sans-serif",
+                      }}
+                    >
+                      Tic-Tac-Toe
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/GrabAJoke">Grab-a-Joke</Link>
+                    <Link
+                      to="/GrabAJoke"
+                      style={{
+                        textDecoration: "none",
+                        fontFamily: "Arial, sans-serif",
+                      }}
+                    >
+                      Grab-a-Joke
+                    </Link>
                   </li>
                 </ul>
               )}
@@ -89,7 +121,15 @@ export default function RightPane() {
                 marginBottom: "0.5rem",
               }}
             >
-              <Link to="/MyResume">View my Resume</Link>
+              <Link
+                to="/MyResume"
+                style={{
+                  textDecoration: "none",
+                  fontFamily: "Arial, sans-serif",
+                }}
+              >
+                View my Resume
+              </Link>
             </Typography>
           </li>
           <li>
@@ -104,7 +144,16 @@ export default function RightPane() {
                 marginBottom: "0.5rem",
               }}
             >
-              <Link to="/contactus"> Contact Me </Link>
+              <Link
+                to="/contactus"
+                style={{
+                  textDecoration: "none",
+                  fontFamily: "Arial, sans-serif",
+                }}
+              >
+                {" "}
+                Contact Me{" "}
+              </Link>
             </Typography>
           </li>
         </ol>
