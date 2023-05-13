@@ -8,6 +8,7 @@ import educationImage from "../assets/Education5.png";
 import wallPaper from "../assets/WallPaper8.jpeg";
 
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 export default function AboutMe() {
   return (
