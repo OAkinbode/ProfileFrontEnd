@@ -12,9 +12,6 @@ function Navbar() {
         sx={{ width: 70, height: 70, marginRight: "1rem" }}
         alt="Picture"
       />
-      <div className="links">
-        <Link to="/login">Login/Register</Link>
-      </div>
     </div>
   );
 }

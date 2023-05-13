@@ -29,7 +29,7 @@ export default function RightPane() {
   return (
     <div
       style={{
-        backgroundColor: "#B5E0B2",
+        backgroundColor: "#D4D6CF",
         maxWidth: 300,
         minWidth: 200,
         paddingTop: 20,
