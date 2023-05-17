@@ -5,6 +5,7 @@ import aboutmeimage from "../assets/ProfileAvatar5.png";
 import techstackimage from "../assets/TechStack3.png";
 import projectsimage from "../assets/Projects2.webp";
 import educationImage from "../assets/Education5.png";
+import experienceImage from "../assets/Experience1.png";
 import wallPaper from "../assets/WallPaper8.jpeg";
 
 import { Link } from "react-router-dom";
@@ -61,7 +62,50 @@ export default function AboutMe() {
           people.
         </Typography>
       </Box>
-
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "left",
+          justifyContent: "left",
+          marginBottom: "2rem",
+        }}
+      >
+        <Avatar
+          src={experienceImage}
+          sx={{ width: 80, height: 80, marginRight: "1rem" }}
+          alt="Picture"
+        />
+        <ul>
+          <li>
+            <Typography
+              variant="body1"
+              textAlign={"left"}
+              style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+            >
+              <b>
+                <span style={{ color: "#008080" }}>
+                  Full Stack Software Developer (Volunteer)
+                </span>{" "}
+              </b>
+              at One Community Global (May 2023 - Till date)
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              variant="body1"
+              textAlign={"left"}
+              style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+            >
+              <b>
+                <span style={{ color: "#008080" }}>
+                  Software Engineering Intern
+                </span>{" "}
+              </b>
+              at Enverus (Jan - April 2023)
+            </Typography>
+          </li>
+        </ul>
+      </Box>
       <Box
         sx={{
           display: "flex",
@@ -92,10 +136,10 @@ export default function AboutMe() {
               textAlign={"left"}
               style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
             >
-              <b>Backend:</b> Java, Python, C++, MVC, Restful APIs, Linux, Data
-              Structures and Algorithms, Spring/Spring Boot, Django, Git/Version
-              Control, Docker, Databases/SQL, Testing/Junit, Postman, Maven,
-              Gradle, AWS (in view).{" "}
+              <b>Backend:</b> Java, JavaScript, Python, C++, MVC, Restful APIs,
+              Linux, Data Structures and Algorithms, Spring/Spring Boot,
+              Node.js, Django, Git/Version Control, Docker, MySQL, MongoDB,
+              Testing/Junit, Postman, Maven, Gradle, AWS (in view).{" "}
             </Typography>
           </li>
           <li>
