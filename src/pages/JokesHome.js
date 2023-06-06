@@ -29,8 +29,14 @@ class JokesHome extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         // Handle the API response data here
-        this.setState({ setup: data.setup });
-        this.setState({ delivery: data.delivery });
+        if (data.setup === undefined) {
+          console.log(data.setup);
+          this.setState({ setup: "Oops, no jokes found." });
+          this.setState({ delivery: "Try again!" });
+        } else {
+          this.setState({ setup: data.setup });
+          this.setState({ delivery: data.delivery });
+        }
         this.setState({ displayJoke: true });
         this.setState({ isLoading: false });
       })
