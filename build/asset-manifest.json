@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d40a7879.css",
+    "main.js": "/static/js/main.5780bc94.js",
+    "static/js/787.62de7e40.chunk.js": "/static/js/787.62de7e40.chunk.js",
+    "static/media/Projects2.webp": "/static/media/Projects2.c6550e3cf1e44493460b.webp",
+    "static/media/WallPaper7.jpeg": "/static/media/WallPaper7.fc9ed8177e38f9d276f4.jpeg",
+    "static/media/TechStack3.png": "/static/media/TechStack3.ef43d6dd6e199a455a69.png",
+    "static/media/Resume_Olusola_Akinbode_April_DV04.pdf": "/static/media/Resume_Olusola_Akinbode_April_DV04.4220a71d7cf8d641a65b.pdf",
+    "static/media/WallPaper8.jpeg": "/static/media/WallPaper8.c150ebbd19d6add4f88f.jpeg",
+    "static/media/profileimage.jpeg": "/static/media/profileimage.c3cc7d7540ca1c42ab25.jpeg",
+    "static/media/Education5.png": "/static/media/Education5.7cd6d2adee2da2bd81b1.png",
+    "static/media/ProfileAvatar5.png": "/static/media/ProfileAvatar5.0ed56f9571c8e75bc74c.png",
+    "static/media/Tictactoe.jpeg": "/static/media/Tictactoe.dc0acc403bc90f5f2a4b.jpeg",
+    "index.html": "/index.html",
+    "main.d40a7879.css.map": "/static/css/main.d40a7879.css.map",
+    "main.5780bc94.js.map": "/static/js/main.5780bc94.js.map",
+    "787.62de7e40.chunk.js.map": "/static/js/787.62de7e40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d40a7879.css",
+    "static/js/main.5780bc94.js"
+  ]
+}

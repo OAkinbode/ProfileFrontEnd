@@ -19,6 +19,12 @@ function Footer() {
             My LinkedIn Account
           </Link>
         </li>
+        <li>
+          <Link to="/TicTacToe">TicTacToe</Link>
+        </li>
+        <li>
+          <Link to="/GrabAJoke">GrabAJoke</Link>
+        </li>
       </ul>
     </div>
   );

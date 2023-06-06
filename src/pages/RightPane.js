@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Container, Typography, Box, Avatar, Paper } from "@mui/material";
-import profileimage from "../assets/profileimage.jpeg";
+import { Container, Typography } from "@mui/material";
+// import profileimage from "../assets/profileimage.jpeg";
 import { Link } from "react-router-dom";
 
 export default function RightPane() {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Typography, Box, Avatar, Paper } from "@mui/material";
+import { Avatar } from "@mui/material";
 import "../styles/Navbar.css";
 import backgroundimage from "../assets/profileimage.jpeg";
 

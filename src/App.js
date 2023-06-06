@@ -1,7 +1,8 @@
-import "./App.css";
+// import "./App.css";
+import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactUs from "./pages/ContactUs";
 import BodyContent from "./pages/BodyContent";
@@ -9,7 +10,8 @@ import Project1 from "./pages/Project1";
 import MyResume from "./pages/MyResume";
 import Contact from "./pages/Contact";
 import TicTacToe from "./pages/TicTacToe";
-import GrabAJoke from "./pages/GrabAJoke";
+// import GrabAJoke from "./pages/GrabAJoke";
+import JokesHome from "./pages/JokesHome";
 
 function App() {
   return (
@@ -30,7 +32,7 @@ function App() {
           <Route path="/project1" element={<Project1 />} />
           <Route path="/MyResume" element={<MyResume />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/GrabAJoke" element={<GrabAJoke />} />
+          <Route path="/GrabAJoke" element={<JokesHome />} />
         </Routes>
         <Footer />
       </Router>
