@@ -11,7 +11,7 @@ function Education() {
       <div className="w-screen bg-gray-50">
         <Titleblock title="Education" />
         <div
-          className="flex px-4 h-screen"
+          className="flex flex-wrap item-center justify-center h-screen"
           style={{ background: `url(${backgroundimage})` }}
         >
           <Textcontainer

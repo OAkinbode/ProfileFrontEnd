@@ -11,12 +11,12 @@ function Contact() {
       <div className="w-screen bg-gray-50">
         <Titleblock title="Contact" />
         <div
-          className="flex px-4 h-screen"
+          className="flex flex-wrap item-center justify-center h-screen"
           style={{ background: `url(${backgroundimage})` }}
         >
-          <div className="px-6 py-6 w-1/2">
-            <div className="w-full h-1/2 bg-gray-100 shadow-xl h-60 px-4">
-              <div className="border-b-2 border-gray-400">
+          <div className="px-6 py-6 w-1/2 h-auto">
+            <div className="w-full bg-gray-100 shadow-xl h-auto px-4">
+              <div className="border-b-2 border-gray-400 w-auto">
                 <p className="font-sans text-2xl whitespace-normal text-left px-4 py-4 italic">
                   I can be reached on:
                 </p>

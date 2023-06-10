@@ -15,7 +15,7 @@ function Projects() {
       <div className="flex-grow bg-gray-50">
         <Titleblock title="Projects" />
         <div
-          className="flex flex-wrap item-center justify-center"
+          className="flex flex-wrap item-center justify-center h-screen"
           style={{ background: `url(${backgroundimage})` }}
         >
           <Link to="/TicTacToe">
