@@ -1,32 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
-      <ul className="footer-links">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="https://github.com/OAkinbode?tab=repositories">
-            My Github Account
-          </Link>
-        </li>
-        <li>
-          <Link to="https://www.linkedin.com/in/olusolaakinbode/">
-            My LinkedIn Account
-          </Link>
-        </li>
-        <li>
-          <Link to="/TicTacToe">TicTacToe</Link>
-        </li>
-        <li>
-          <Link to="/GrabAJoke">GrabAJoke</Link>
-        </li>
-      </ul>
-    </div>
+    <footer className="bg-gray-200 p-4 text-center">
+      <p className="text-sm text-gray-600">Page links:</p>
+      <div className="mt-2">
+        <a
+          href="https://github.com/OAkinbode?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-2 text-blue-600 hover:text-blue-800"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/olusolaakinbode/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-2 text-blue-600 hover:text-blue-800"
+        >
+          LinkedIn
+        </a>
+      </div>
+      <div></div>
+    </footer>
   );
 }
 

@@ -1,38 +1,39 @@
-// import "./App.css";
-import "./index.css";
+import "./styles.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ContactUs from "./pages/ContactUs";
-import BodyContent from "./pages/BodyContent";
-import Project1 from "./pages/Project1";
-import MyResume from "./pages/MyResume";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+import Education from "./pages/Education";
+import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
-import TicTacToe from "./pages/TicTacToe";
-// import GrabAJoke from "./pages/GrabAJoke";
-import JokesHome from "./pages/JokesHome";
+import TicTacToe from "./pages/Tic-Tac-Toe";
+import GrabAJoke from "./pages/GrabAJoke";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Routes>
           <Route
             path="/"
             element={
               <>
-                {/* <Navbar /> */}
-                <BodyContent />
+                <Navbar />
+                <Home />
               </>
             }
           />
-          <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/TicTacToe" element={<TicTacToe />} />
-          <Route path="/project1" element={<Project1 />} />
-          <Route path="/MyResume" element={<MyResume />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Skills" element={<Skills />} />
+          <Route path="/Education" element={<Education />} />
+          <Route path="/Resume" element={<Resume />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/GrabAJoke" element={<JokesHome />} />
+          <Route path="/TicTacToe" element={<TicTacToe />} />
+          <Route path="/GrabAJoke" element={<GrabAJoke />} />
         </Routes>
         <Footer />
       </Router>

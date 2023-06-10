@@ -1,17 +1,14 @@
 import React from "react";
-import "./index.css";
 import ReactDOM from "react-dom/client";
-// import './index.css';
+import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { StyledEngineProvider } from "@mui/material/styles";
+import "./styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <StyledEngineProvider injectFirst>
-      <App />
-    </StyledEngineProvider>
+    <App />
   </React.StrictMode>
 );
 
