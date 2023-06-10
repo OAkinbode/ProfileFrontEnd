@@ -24,7 +24,7 @@ function Home() {
 
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar isMobile={isMobile}></Navbar>
 
       <div className="flex">
         {!isMobile && <Leftpane />}
