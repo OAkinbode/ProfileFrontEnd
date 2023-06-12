@@ -7,15 +7,25 @@ import TicTacToe from "../assets/Tictactoe.jpeg";
 import Jokes from "../assets/Jokes.jpeg";
 import Ticket from "../assets/Ticket.webp";
 import backgroundimage from "../assets/checkerboard-cross.webp";
+import MobileView from "../components/MobileView";
+import Navbar from "../components/Navbar";
+import { useSelector } from "react-redux";
 
 function Projects() {
+  const isMobileRedux = useSelector((state) => state.isMobile);
+
   return (
     <div className="flex">
-      <Leftpane />
+      {!isMobileRedux && <Leftpane />}
       <div className="flex-grow bg-gray-50">
+        <Navbar isMobile={isMobileRedux}></Navbar>
+
         <Titleblock title="Projects" />
+        <MobileView />
         <div
-          className="flex flex-wrap item-center justify-center h-screen"
+          className={`flex flex-wrap item-center justify-center ${
+            isMobileRedux ? "h-auto" : "h-screen"
+          }`}
           style={{ background: `url(${backgroundimage})` }}
         >
           <Link to="/TicTacToe">

@@ -1,5 +1,6 @@
 import React from "react";
 import Dropdown from "./Dropdown";
+import Mobileview from "./MobileView";
 
 function Navbar(props) {
   return (
@@ -9,6 +10,7 @@ function Navbar(props) {
         <Dropdown isMobile={props.isMobile} />
       </div>
       <div className="">
+        <Mobileview />
         <ul className="flex flex-wrap justify-end space-x-4 py-4">
           <li>
             <a

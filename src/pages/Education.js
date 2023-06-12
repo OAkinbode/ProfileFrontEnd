@@ -3,12 +3,16 @@ import Leftpane from "../components/Leftpane";
 import Titleblock from "../components/Titleblock";
 import Textcontainer from "../components/Textcontainer2";
 import backgroundimage from "../assets/checkerboard-cross.webp";
+import Navbar from "../components/Navbar";
+import { useSelector } from "react-redux";
 
 function Education() {
+  const isMobileRedux = useSelector((state) => state.isMobile);
   return (
     <div className="flex w-screen">
-      <Leftpane />
+      {!isMobileRedux && <Leftpane />}
       <div className="w-screen bg-gray-50">
+        <Navbar isMobile={isMobileRedux}></Navbar>
         <Titleblock title="Education" />
         <div
           className="flex flex-wrap item-center justify-center h-screen"

@@ -51,17 +51,17 @@ function Leftpane() {
           </div>
           <span>Education</span>
         </Link>
-        <Link to="/Resume" className="flex py-4 hover:bg-gray-50 items-center">
-          <div className="px-4">
-            <FaTable size={30} color="gray" />
-          </div>
-          <span>Resume</span>
-        </Link>
         <Link to="/Contact" className="flex py-4 hover:bg-blue-50 items-center">
           <div className="px-4">
             <FaPhone size={30} color="blue" />
           </div>
           <span>Contact</span>
+        </Link>
+        <Link to="/Resume" className="flex py-4 hover:bg-gray-50 items-center">
+          <div className="px-4">
+            <FaTable size={30} color="gray" />
+          </div>
+          <span>Resume</span>
         </Link>
       </div>
     </div>

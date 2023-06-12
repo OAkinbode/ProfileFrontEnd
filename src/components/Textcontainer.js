@@ -1,12 +1,17 @@
 import React from "react";
+import MobileView from "./MobileView";
+import { useSelector } from "react-redux";
 
 function Textcontainer(props) {
+  const isMobileRedux = useSelector((state) => state.isMobile);
+
   return (
     <div className="px-6 py-6 w-full md:w-96">
       <div className="w-full bg-gray-50 shadow-xl px-4">
         <div className="border-b-2 border-gray-400">
           <p className="font-sans text-2xl whitespace-normal text-left px-4 py-4 italic">
             {props.title}
+            <MobileView />
           </p>
         </div>
         <div className="flex items-center justify-center">
