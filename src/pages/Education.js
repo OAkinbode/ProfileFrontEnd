@@ -15,17 +15,19 @@ function Education() {
         <Navbar isMobile={isMobileRedux}></Navbar>
         <Titleblock title="Education" />
         <div
-          className="flex flex-wrap item-center justify-center h-screen"
+          className="h-screen"
           style={{ background: `url(${backgroundimage})` }}
         >
-          <Textcontainer
-            title="Bachelor's Degree"
-            body="Mechanical Engineering from the Federal University of Agriculture Abeokuta, Ogun state, Nigeria."
-          />
-          <Textcontainer
-            title="Master's Degree"
-            body="Software Engineering from the University of Calgary, Alberta, Canada."
-          />
+          <div className="flex flex-wrap item-center justify-center h-auto">
+            <Textcontainer
+              title="Bachelor's Degree"
+              body="Mechanical Engineering from the Federal University of Agriculture Abeokuta, Ogun state, Nigeria."
+            />
+            <Textcontainer
+              title="Master's Degree"
+              body="Software Engineering from the University of Calgary, Alberta, Canada."
+            />
+          </div>
         </div>
       </div>
     </div>
