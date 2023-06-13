@@ -29,7 +29,7 @@ function Projects() {
           style={{ background: `url(${backgroundimage})` }}
         >
           <Link to="/TicTacToe">
-            <div className="px-4">
+            <div className="px-2">
               <Textcontainer
                 title="Tic-Tac-Toe"
                 body="This game is built in SpringBoot/Java and in React.js. Click to play against the computer!"
@@ -38,7 +38,7 @@ function Projects() {
             </div>
           </Link>
           <Link to="/GrabAJoke">
-            <div className="px-4 ">
+            <div className="px-2 ">
               <Textcontainer
                 title="Grab a Joke"
                 body="This app is built in Node.js/MongoDB and in React.js. Click to go grab-a-joke!"
@@ -60,7 +60,7 @@ function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="px-4">
+            <div className="px-2">
               <Textcontainer
                 title="Ticketing System (Github)"
                 body="An app that allows users to make reservations at cinemas. Written in React.js and Spring Boot."

@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import JokesDisplay from "../components/JokesDisplay";
 import JokesForm from "../components/JokesForm";
 import JokesButton from "../components/JokesButton";
@@ -7,6 +8,8 @@ import LeftPane from "../components/Leftpane";
 import Loading from "../components/Loading";
 import Titleblock from "../components/Titleblock";
 import backgroundimage from "../assets/checkerboard-cross.webp";
+import MobileView from "../components/MobileView";
+import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
 class GrabAJoke extends React.Component {
@@ -28,7 +31,6 @@ class GrabAJoke extends React.Component {
     fetch(
       `https://jokes-backend-in-node-oakinbode.vercel.app/api/getjoke?keyWord=${keyword}`
     )
-      // fetch(`http://localhost:3000/api/getjoke?keyWord=${keyword}`)
       .then((response) => response.json())
       .then((data) => {
         // Handle the API response data here
@@ -59,12 +61,14 @@ class GrabAJoke extends React.Component {
 
   render() {
     const { jokeMode, displayJoke, isLoading } = this.state;
+    const { isMobileRedux } = this.props;
     return (
       <div className="flex flex-grow">
-        <LeftPane />
+        {!isMobileRedux && <LeftPane />}
         <div className="w-screen">
+          <Navbar isMobile={isMobileRedux}></Navbar>
           <Titleblock title="Grab-A-Joke" />
-
+          <MobileView />
           <div
             className="bg-gray-100 flex-grow"
             style={{
@@ -140,4 +144,10 @@ class GrabAJoke extends React.Component {
   }
 }
 
-export default GrabAJoke;
+const mapStateToProps = (state) => {
+  return {
+    isMobileRedux: state.isMobile,
+  };
+};
+
+export default connect(mapStateToProps)(GrabAJoke);

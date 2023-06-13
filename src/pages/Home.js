@@ -56,7 +56,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex ">
+            <div className="flex flex-wrap">
               <Textcontainer2
                 title="Welcome"
                 body="Hi, My name is Sola. I build websites and applications that pop! I have a passion for quality and would love to work with you."

@@ -5,8 +5,13 @@ import Leftpane from "../components/Leftpane";
 import "../styles/TicTacToe.css";
 import backgroundimage from "../assets/checkerboard-cross.webp";
 import Titleblock from "../components/Titleblock";
+import MobileView from "../components/MobileView";
+import Navbar from "../components/Navbar";
+import { useSelector } from "react-redux";
 
 export default function TicTacToe() {
+  const isMobileRedux = useSelector((state) => state.isMobile);
+
   const initialBoard = [
     [null, null, null],
     [null, null, null],
@@ -211,21 +216,27 @@ export default function TicTacToe() {
 
   return (
     <div className="flex">
-      <Leftpane />
+      {!isMobileRedux && <Leftpane />}
+      <MobileView />
       <div className="w-screen">
+        <Navbar isMobile={isMobileRedux}></Navbar>
         <Titleblock title="TicTacToe" />
         <div
           className="bg-gray-100 h-screen flex items-center justify-center"
           style={{ background: `url(${backgroundimage})` }}
         >
-          <div className="w-1/2 h-auto bg-gray-100 px-2 py-2 shadow-lg border border-gray-200">
-            <div className="flex items-center justify-center px-6 py-6">
+          <div className="w-auto h-auto bg-gray-100 px-2 py-2 shadow-lg border border-gray-200">
+            <div className="flex items-center justify-center px-3 py-3">
               <div className="text-center">
                 {board.map((row, rowIndex) => (
                   <div className="row flex flex-wrap" key={rowIndex}>
                     {row.map((cell, cellIndex) => (
                       <button
-                        className={`cell ${cell} bg-gray-50 rounded`}
+                        className={` flex flew-wrap border border-gray-300 items-center justify-center bg-gray-50 rounded ${
+                          isMobileRedux
+                            ? "w-20 h-20 text-2xl"
+                            : "w-40 h-40 text-6xl"
+                        }`}
                         key={cellIndex}
                         onClick={() => handleCellClick(rowIndex, cellIndex)}
                       >
