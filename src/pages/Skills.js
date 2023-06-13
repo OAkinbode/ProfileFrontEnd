@@ -31,7 +31,7 @@ function Skills() {
             />
             <Textcontainer
               title="Back End Development"
-              body="I use SpringBoot, Java, Node.js, MongoDB and MySQL to develop clean code on the backend. I am know Python and C++ for other use cases."
+              body="I use SpringBoot, Java, Node.js, MongoDB and MySQL to develop clean code on the backend. I also use Python and C++ for other use cases."
             />
             <Textcontainer
               title="Machine Learning"
