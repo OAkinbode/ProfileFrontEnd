@@ -20,12 +20,16 @@ function Education() {
         >
           <div className="flex flex-wrap item-center justify-center h-auto">
             <Textcontainer
-              title="Bachelor's Degree"
+              title="Bachelor's Degree (2010)"
               body="Mechanical Engineering from the Federal University of Agriculture Abeokuta, Ogun state, Nigeria."
             />
             <Textcontainer
-              title="Master's Degree"
+              title="Master's Degree (2023)"
               body="Software Engineering from the University of Calgary, Alberta, Canada."
+            />
+            <Textcontainer
+              title="PMP Certification (2020)"
+              body="Project management professional certification attesting to experience and knowledge in the field."
             />
           </div>
         </div>
