@@ -5,6 +5,7 @@ import profileimage from "../assets/ProfilePicture6.jpeg";
 import backgroundimage from "../assets/checkerboard-cross.webp";
 import Textcontainer2 from "../components/Textcontainer2";
 import Navbar from "../components/Navbar";
+import Picscontainer from "../components/Picscontainer";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -68,6 +69,9 @@ function Home() {
             and MySQL to build one-of-a-kind applications. This website showcases some of my skills and projects. So lets jump right in. Click on 'beautiful' above to see some of my projects."
               />
             </div>
+            <Link to="/Skills">
+              <Picscontainer />
+            </Link>
           </div>
         </div>
       </div>

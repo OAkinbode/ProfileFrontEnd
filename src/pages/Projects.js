@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Leftpane from "../components/Leftpane";
 import Titleblock from "../components/Titleblock";
-import Textcontainer from "../components/Textcontainer";
+import Textcontainer from "../components/Textandpicscontainer";
 import TicTacToe from "../assets/Tictactoe.jpeg";
 import Jokes from "../assets/Jokes.jpeg";
 import Ticket from "../assets/Ticket.webp";
