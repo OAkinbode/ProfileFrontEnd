@@ -34,7 +34,7 @@ function Home() {
             <div className="flex flex-wrap">
               <div className="py-6 px-6 flex w-full">
                 <div className="bg-teal-900 flex items-center justify-center w-full">
-                  <div className="px-4 py-4 w-1/4 h-auto">
+                  <div className="px-4 py-4 w-1/4 h-1/4 flex items-center justify-center">
                     <img
                       src={profileimage}
                       alt="Profile"
