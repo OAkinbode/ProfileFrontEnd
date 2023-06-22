@@ -38,7 +38,7 @@ function Home() {
                     <img
                       src={profileimage}
                       alt="Profile"
-                      className="rounded-full shadow-xl max-h-96 min-h-min"
+                      className="rounded-full shadow-xl"
                     />
                   </div>
                   <div className="flex flex-wrap">
