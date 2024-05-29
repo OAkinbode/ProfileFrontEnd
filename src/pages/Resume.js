@@ -1,5 +1,6 @@
 import React from "react";
-import resume from "../assets/Resume_Olusola_Akinbode_June_DVP01.pdf";
+// import resume from "../assets/Resume_Olusola_Akinbode_June_DVP01.pdf";
+import resume from "../assets/Resume_Olusola_Akinbode_May_D1.pdf";
 
 import Navbar from "../components/Navbar";
 

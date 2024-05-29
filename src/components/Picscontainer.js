@@ -14,7 +14,7 @@ function Textcontainer() {
   const isMobileRedux = useSelector((state) => state.isMobile);
 
   return (
-    <div className="px-6 py-6 h-auto">
+    <div className="px-6 py-6 h-auto bg-gray-50">
       <div className="flex w-full bg-gray-50 shadow-xl px-4 h-full hover:bg-gray-100">
         <div className="flex flex-wrap justify-center items-center px-1 py-1">
           <img
