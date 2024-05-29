@@ -19,14 +19,14 @@ function Contact() {
           className="flex flex-wrap item-center justify-center h-screen"
           style={{ background: `url(${backgroundimage})` }}
         >
-          <div className="px-6 py-6 h-auto w-auto">
+          <div className="px-6 py-6 h-auto w-full">
             <div className="w-full bg-gray-100 shadow-xl h-auto px-4">
               <div className="border-b-2 border-gray-400 w-auto">
-                <p className="font-sans text-2xl whitespace-normal text-left px-4 py-4 italic">
-                  I can be reached on:
+                <p className="font-sans text-2xl whitespace-normal text-left px-4 py-4 italic text-teal-900 bg-teal-200">
+                  Hi there! Thank you for coming this far. I can be reached on:
                 </p>
               </div>
-              <div className="">
+              <div className="text-teal-800">
                 <div>
                   <p className="font-sans text-1xl whitespace-normal text-left px-4 py-2">
                     Phone: +14034669066
@@ -38,18 +38,26 @@ function Contact() {
                   </p>
                 </div>
                 <div className="">
-                  <Link to="https://www.linkedin.com/in/olusolaakinbode/">
-                    <p className="font-sans text-1xl whitespace-normal hover:text-blue-500 text-left px-4 py-2">
+                  <a
+                    href="https://www.linkedin.com/in/olusolaakinbode/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="font-sans text-1xl whitespace-normal hover:text-green-500 text-left px-4 py-2 italic">
                       LinkedIn
                     </p>
-                  </Link>
+                  </a>
                 </div>
                 <div>
-                  <Link to="https://github.com/OAkinbode">
-                    <p className="font-sans text-1xl whitespace-normal hover:text-blue-500 text-left px-4 py-2">
-                      Github
+                  <a
+                    href="https://github.com/OAkinbode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="font-sans text-1xl whitespace-normal hover:text-green-500 text-left px-4 py-2 italic">
+                      Github link
                     </p>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
