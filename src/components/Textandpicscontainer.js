@@ -9,13 +9,13 @@ function Textcontainer(props) {
     <div className="px-4 py-4 md:w-80 md:h-72">
       <div className="w-full bg-gray-50 shadow-xl px-4 h-full">
         <div className="border-b-2 border-gray-400">
-          <p className="font-sans text-2xl whitespace-normal text-left px-4 py-4 italic">
+          <p className="font-sans text-2xl whitespace-normal text-left px-4 py-4 italic text-teal-900">
             {props.title}
             <MobileView />
           </p>
         </div>
         <div className="flex items-center justify-center">
-          <p className="font-sans text-1xl whitespace-normal text-left px-4 py-2">
+          <p className="font-sans text-1xl whitespace-normal text-left px-4 py-2 text-gray-700">
             {props.body}
           </p>
         </div>

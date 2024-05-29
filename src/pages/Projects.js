@@ -10,6 +10,8 @@ import backgroundimage from "../assets/checkerboard-cross.webp";
 import MobileView from "../components/MobileView";
 import Navbar from "../components/Navbar";
 import { useSelector } from "react-redux";
+import votingImage from "../assets/votingImage.webp";
+import resin8 from "../assets/resin8.jpg";
 
 function Projects() {
   const isMobileRedux = useSelector((state) => state.isMobile);
@@ -28,10 +30,36 @@ function Projects() {
           }`}
           style={{ background: `url(${backgroundimage})` }}
         >
+          <a
+            href="https://app.resin8.ai/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="px-4">
+              <Textcontainer
+                title="Resin8.ai"
+                body="AI enabled ecommerce application for industrial and agricultural equipment."
+                image={resin8}
+              />
+            </div>
+          </a>
+          <a
+            href="https://agm-voting-app.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="px-4">
+              <Textcontainer
+                title="Be Counted"
+                body="A voting application to help corporate bodies securely vote on motions during meetings such as AGMs"
+                image={votingImage}
+              />
+            </div>
+          </a>
           <Link to="/TicTacToe">
             <div className="px-2">
               <Textcontainer
-                title="Tic-Tac-Toe"
+                title="Game: Tic-Tac-Toe"
                 body="This game is built in SpringBoot/Java and in React.js. Click to play against the computer!"
                 image={TicTacToe}
               />
@@ -46,15 +74,7 @@ function Projects() {
               />
             </div>
           </Link>
-          {/* <Link to="/">
-            <div className="px-4">
-              <Textcontainer
-                title="Security"
-                body="This work was done as part of an internship with Enverus. I used Angular and Spring Boot"
-                image={Security}
-              />
-            </div>
-          </Link> */}
+
           <a
             href="https://github.com/OAkinbode/ticket-reservation-system"
             target="_blank"

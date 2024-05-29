@@ -40,7 +40,7 @@ function Skills() {
             />
             <Textcontainer
               title="Cloud Development and Devops"
-              body="I have developed and supported applications with a wide variety of deployment strategies including docker container deployments, serverless through AWS lambdas, EKS and specialized services such as Vercel and Heroku. I have worked with many cloud based PAAS and IAAS for authentication and data storage such as Auth0, Firebase, MongoDB, SuperBase(postgresql ORM)"
+              body="I have developed and supported applications with a wide variety of deployment strategies including docker container deployments, serverless through AWS lambdas, EKS and specialized services such as Vercel and Heroku. I have worked with many cloud based PAAS and IAAS for authentication and data storage such as Auth0, Firebase, MongoDB, SuperBase(postgresql ORM)."
             />
             <Picscontainer />
           </div>
